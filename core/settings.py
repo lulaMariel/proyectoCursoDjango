@@ -27,7 +27,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'web_prueba'
+    'aweb_prueba',
+    'aservicios',
 ]
 
 MIDDLEWARE = [

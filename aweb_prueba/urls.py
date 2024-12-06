@@ -1,6 +1,6 @@
 from django.urls import path
 # from .views import inicio, servicio, tienda, blog, contacto
-from web_prueba import views
+from aweb_prueba import views
 
 urlpatterns = [
     path('', views.inicio, name="inicio"),

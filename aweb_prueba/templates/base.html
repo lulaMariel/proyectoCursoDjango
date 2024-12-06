@@ -29,19 +29,19 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active px-lg-4">
+                    <li class="nav-item {% if request.path == '/' or request.path == '/inicio/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'inicio' %}">Inicio</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item {% if request.path == '/servicios/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'servicios' %}">Servicios</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item {% if request.path == '/tienda/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'tienda' %}">Tienda</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item {% if request.path == '/contacto/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'contacto' %}">Contacto</a>
                     </li>
-                    <li class="nav-item px-lg-4">
+                    <li class="nav-item {% if request.path == '/blog/' %} active {% endif %} px-lg-4">
                         <a class="nav-link text-uppercase text-expanded" href="{% url 'blog' %}">Blog</a>
                     </li>
 
@@ -53,7 +53,7 @@
     {% block content %}
     {% endblock %}
 
-    <footer class="footer text-faded text-center py-5 fixed-bottom">
+    <footer class="footer text-faded text-center py-5">
         <div class="container">
             <p class="m-0">
                 <a href="#" class="link">
