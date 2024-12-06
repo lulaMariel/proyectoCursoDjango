@@ -80,7 +80,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgba(24, 64, 8);
+  background-color: rgb(12, 8, 64);
   font-family: 'Raleway';
 }
 
@@ -125,6 +125,10 @@ p {
   position: relative;
 }
 
+.intro .intro-text { 
+  margin-left: 40rem;
+}
+
 @media (min-width: 992px) {
   .intro .intro-img {
     width: 75%;
@@ -134,7 +138,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgba(24, 64, 8);
+    background-color: rgb(12, 8, 64);
     color: cornsilk;
     position: absolute;
   }
@@ -162,7 +166,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgba(24, 64, 8);
+  background-color: rgb(12, 8, 64);
   color: cornsilk;
 }
 
@@ -229,7 +233,7 @@ p {
 }
 
 .footer {
-   background-color: rgba(24, 64, 8, 0.8);
+   background-color: rgb(12, 8, 64);
 }
 
 
