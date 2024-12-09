@@ -5,5 +5,5 @@ from aservicios import views
 
 
 urlpatterns = [
-    path('servicios/', views.servicio, name="servicios"),
+    path('', views.servicio, name="servicios"),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

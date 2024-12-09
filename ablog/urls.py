@@ -4,5 +4,6 @@ from django.conf.urls.static import static
 from ablog import views
 
 urlpatterns = [
-    path('blog/', views.blog, name="blog"),
+    path('', views.blog, name="blog"),
+    path('categorias/<categoria_id>/', views.categoria, name="categorias"),
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
