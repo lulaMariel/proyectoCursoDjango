@@ -6,4 +6,5 @@ urlpatterns = [
     path('', include('aweb_prueba.urls')),
     path('servicios/', include('aservicios.urls')),
     path('blog/', include('ablog.urls')),
+    path('contacto/', include('acontacto.urls')),
 ]

@@ -234,6 +234,7 @@ p {
 
 .footer {
   background-color: rgb(12, 8, 64);
+  
 }
 
 
@@ -291,4 +292,13 @@ ul.errorlist{
 .linksCategorias:hover{
   text-decoration: none;
   color: rgba(255, 255, 255, 0.4);
+}
+
+.contenedor_formulario {
+  color: white;
+  background-color: rgb(12, 8, 64);
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 5px;
+  padding: 1px 0px;
 }

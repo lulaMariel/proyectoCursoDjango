@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Contacto{% endblock %}
+
+{% block content %}
+
+<div class="contenedor_formulario" style="height: 80vh;">
+    <form action="" method="post" style="text-align: center;">
+        {% csrf_token %}
+        <table style="margin: 20px auto;">
+            {{ mi_formulario }}
+        </table>
+        <input type="submit" value="Enviar" style="width: 150px;">
+    </form>
+</div>
+
+{% endblock %}

@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     'aweb_prueba',
     'aservicios',
     'ablog',
+    'acontacto',
 ]
 
 MIDDLEWARE = [
