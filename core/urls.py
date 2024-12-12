@@ -8,4 +8,5 @@ urlpatterns = [
     path('blog/', include('ablog.urls')),
     path('contacto/', include('acontacto.urls')),
     path('tienda/', include('atienda.urls')),
+    path('carrito/', include('acarrito.urls')),
 ]
