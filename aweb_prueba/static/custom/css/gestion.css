@@ -234,7 +234,7 @@ p {
 
 .footer {
   background-color: rgb(12, 8, 64);
-  
+  opacity: 60%;
 }
 
 
@@ -295,10 +295,11 @@ ul.errorlist{
 }
 
 .contenedor_formulario {
-  color: white;
   background-color: rgb(12, 8, 64);
   width: 50%;
   margin: 10px auto;
   border-radius: 5px;
   padding: 1px 0px;
+  display: flex;
+  justify-content: center;
 }
