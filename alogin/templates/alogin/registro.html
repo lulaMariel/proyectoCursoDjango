@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Registrarse{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<form action="" method="post" style="color: white;">
+    <div style="width: 75%; margin: auto;">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <div class="text-right">
+            <button type="submit" class="btn btn-success my-3">Registrarse</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

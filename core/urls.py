@@ -9,4 +9,5 @@ urlpatterns = [
     path('contacto/', include('acontacto.urls')),
     path('tienda/', include('atienda.urls')),
     path('carrito/', include('acarrito.urls')),
+    path('autenticacion/', include('alogin.urls')),
 ]

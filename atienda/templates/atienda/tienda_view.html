@@ -8,7 +8,11 @@
 
 <div class="container">
     <div style="float: right; margin: 20px 0px;">
-        {% include 'acarrito/widget.html' %}
+        {% if request.user.is_authenticated %}
+            {% include 'acarrito/widget.html' %}
+        {% else %}
+            <div class="alert alert-danger text-center">Debes iniciar sesión</div>
+        {% endif %}
     </div>
     <div class="row">
 
