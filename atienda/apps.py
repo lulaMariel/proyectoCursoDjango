@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class AtiendaConfig(AppConfig):
+class aTiendaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'atienda'
+    name = 'aTienda'
     verbose_name = 'tienda'

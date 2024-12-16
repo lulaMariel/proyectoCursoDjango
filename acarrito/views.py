@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .carrito import Carrito
-from atienda.models import Producto
+from aTienda.models import Producto
 
 def agregar_producto_view(request, producto_id):
     carrito = Carrito(request)

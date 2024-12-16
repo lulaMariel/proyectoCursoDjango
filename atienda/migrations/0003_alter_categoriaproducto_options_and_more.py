@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('atienda', '0002_producto_created_producto_updated'),
+        ('aTienda', '0002_producto_created_producto_updated'),
     ]
 
     operations = [
@@ -17,6 +17,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='producto',
             name='imagen',
-            field=models.ImageField(blank=True, null=True, upload_to='atienda'),
+            field=models.ImageField(blank=True, null=True, upload_to='aTienda'),
         ),
     ]

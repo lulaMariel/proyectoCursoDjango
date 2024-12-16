@@ -1,5 +1,5 @@
 from django.urls import path
-from acarrito import views
+from aCarrito import views
 
 app_name = 'carrito'
 

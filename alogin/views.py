@@ -8,7 +8,7 @@ class registroView(View):
     def get(self, request):
         form = UserCreationForm()
 
-        return render(request, 'alogin/registro.html', {'form': form})
+        return render(request, 'aLogin/registro.html', {'form': form})
 
     def post(self, request):
         form = UserCreationForm(request.POST)
@@ -21,7 +21,7 @@ class registroView(View):
         else:
             for mensaje in form.error_messages:
                 messages.error(request, form.error_messages[mensaje])
-            return render(request, 'alogin/registro.html', {'form': form})
+            return render(request, 'aLogin/registro.html', {'form': form})
 
 def cerrar_sesion(request):
     logout(request)
@@ -44,4 +44,4 @@ def loginView(request):
             messages.error(request, 'Nombre de usuario o contraseña incorrecta')
 
     form = AuthenticationForm()
-    return render(request, 'alogin/login.html', {'form': form})
+    return render(request, 'aLogin/login.html', {'form': form})

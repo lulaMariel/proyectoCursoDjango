@@ -9,7 +9,7 @@
 <div class="container">
     <div style="float: right; margin: 20px 0px;">
         {% if request.user.is_authenticated %}
-            {% include 'acarrito/widget.html' %}
+            {% include 'aCarrito/widget.html' %}
         {% else %}
             <div class="alert alert-danger text-center">Debes iniciar sesión</div>
         {% endif %}

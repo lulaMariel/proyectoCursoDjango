@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from aservicios.models import Servicio
+from aServicios.models import Servicio
 
 def servicio(request):
 
     servicios = Servicio.objects.all
 
-    return render(request, "aservicios/servicios_view.html", {"servicios": servicios})
+    return render(request, "aServicios/servicios_view.html", {"servicios": servicios})

@@ -1,6 +1,6 @@
 from django.urls import path
 # from .views import inicio, servicio, tienda, blog, contacto
-from aweb_prueba import views
+from aWeb_prueba import views
 from django.conf import settings
 from django.conf.urls.static import static
 

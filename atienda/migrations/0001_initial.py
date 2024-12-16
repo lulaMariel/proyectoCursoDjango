@@ -33,7 +33,7 @@ class Migration(migrations.Migration):
                 ('imagen', models.ImageField(blank=True, null=True, upload_to='tienda')),
                 ('precio', models.FloatField()),
                 ('stock', models.BooleanField(default=True)),
-                ('categoria', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='atienda.categoriaproducto')),
+                ('categoria', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='aTienda.categoriaproducto')),
             ],
             options={
                 'verbose_name': 'Producto',

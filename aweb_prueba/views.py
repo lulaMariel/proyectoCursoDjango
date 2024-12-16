@@ -1,7 +1,7 @@
 from django.shortcuts import render
-from acarrito.carrito import Carrito
+from aCarrito.carrito import Carrito
 
 def inicio(request):
     carrito = Carrito(request)
 
-    return render(request, "aweb_prueba/inicio_view.html")
+    return render(request, "aWeb_prueba/inicio_view.html")

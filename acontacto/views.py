@@ -14,4 +14,4 @@ def contacto(request):
 
             return redirect('/contacto/?valido')
 
-    return render(request, "acontacto/contacto_view.html", {'mi_formulario': formulario_contacto})
+    return render(request, "aContacto/contacto_view.html", {'mi_formulario': formulario_contacto})

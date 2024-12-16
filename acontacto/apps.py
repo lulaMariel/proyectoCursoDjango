@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class AcontactoConfig(AppConfig):
+class aContactoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'acontacto'
+    name = 'aContacto'
     verbose_name = 'contacto'
