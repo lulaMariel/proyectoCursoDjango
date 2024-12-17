@@ -6,6 +6,7 @@ from aTienda.models import Producto
 User = get_user_model()
 
 class Pedido(models.Model):
+    
     user = models.ForeignKey(User, on_delete = models.CASCADE)
     created_at = models.DateTimeField(auto_now_add = True)
 
@@ -14,12 +15,12 @@ class Pedido(models.Model):
     
     @property
     def total(self):
-        return self.lineapedidos_set_aggregate(
+        return self.aLineapedidos_set_aggregate(
             total = Sum(F('precio') * F('cantidad'), output_field = FloatField())
         ) ['total']
 
     class Meta:
-        db_table = 'pedidos'
+        db_table = 'aPedidos'
         verbose_name = 'pedido'
         verbose_name_plural = 'pedidos'
         ordering = ['id']
@@ -35,7 +36,7 @@ class LineaPedido(models.Model):
         return f'{self.cantidad} unidades de {self.producto_id.nombre}'
     
     class Meta:
-        db_table = 'lineapedidos'
+        db_table = 'aLineapedidos'
         verbose_name = 'Línea Pedido'
         verbose_name_plural = 'Línea Pedidos'
         ordering = ['id']
